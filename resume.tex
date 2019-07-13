@@ -1,0 +1,209 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex, hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+\usepackage[charter]{mathdesign} % Bitstream Charter
+% \usepackage{newpxtext,newpxmath} % Palatino
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.50in}
+\addtolength{\evensidemargin}{-0.50in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemNoBullet}[2]{
+  \item[]\small{
+    \hspace{-9pt}\textbf{#1}{: #2 \vspace{-6pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item[]
+  \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+      \hspace{-10pt}\textbf{#1} & #2 \\
+      \hspace{-10pt}\textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% custom commands
+\newcommand{\shorterSection}[1]{\vspace{-10pt}\section{#1}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+  \small \textbf{\href{https://david.gurevich.ca}{\huge David Gurevich}} \\  \href{mailto:david@gurevich.ca}{david@gurevich.ca} $\vert$
+  416 414 0515 $\vert$
+  Website: \href{https://david.gurevich.ca}{david.gurevich.ca} $\vert$
+  Github: \href{https://github.com/davidgur}{davidgur}
+\end{center}
+
+%-----------SKILLS-----------------
+\shorterSection{Skills}
+  \resumeSubHeadingListStart
+  \small
+    \item{
+     \textbf{Languages}{: Python, C/C++, MATLAB, Bash, HTML/CSS, \LaTeX{}}
+     \hfill
+     \textbf{Development}{: Git, Linux, Unit Testing, Async}
+    }
+    \vspace{-5pt}
+    \item{
+     \textbf{Libraries}{: NumPy, Pandas, SciPy, Flask, C++ Standard Library (STL), Windows API, CUDA, SciKit-Learn, Tessearct OCR, Bokeh, Matplotlib}
+    }
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\shorterSection{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {York University}{Toronto, ON}
+      {Research Assistant}{January 2019 - Present}
+      \resumeItemListStart
+        \resumeItem{Measles Research}
+          {Conducted epidemiological research to model the dynamics of measles in secondary schools
+            \begin{itemize}
+                \item Implemented a deterministic ordinary differential equation model that models the population compartmentalization of students in secondary schools during a measles outbreak (MATLAB, Python)
+                \item Designed and developed an Agent-Based Model (ABM) alternative to the ODE model with improved accuracy and realism. Improved execution time by a factor of over 17,000 (C++17 [STL], Python)
+                \item Documented findings in an epidemiological report co-authored by supervisor
+            \end{itemize}
+          }
+        \resumeItem{Typesetting}
+          {Typeset course notes for supervisor using \LaTeX{}}
+        \resumeItem{SMB Conference}
+          {Helped plan 2019 Annual Society for Mathematical Biology meeting
+          \begin{itemize}
+              \item Aided in scheduling hundreds of speakers and symposiums in a quick and efficient manner
+              \item Developed Python and Shell scripts to automate repetitive tasks
+          \end{itemize}
+          }
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {AMAG, Inc}{Missisauga, ON}
+      {Software Engineer}{February 2018 - November 2018}
+      \resumeItemListStart
+        \resumeItem{Research and Development}
+          {Researched cost-effective solutions for PC based data acquisition (DAQ) and arbitrary signal generation}
+        \resumeItem{Real-time Computing}
+          {Developed a C++ application for (soft) real-time data acquisition and processing of ultrasonic signals}
+        \resumeItem{Web Interface}
+          {Used Python and Flask to design an easy-to-use web interface that allows users to specify and send an ultrasonic signal, and then visualize and process the input from the DAQ device}
+        \resumeItem{Collaboration}
+          {Worked closely with team and supervisor to outline technical limitations and to overcome them}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\shorterSection{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Ultrasonic fluid flow meter}
+     {A soft real-time utility that allows uses to send and receive ultrasonic signals using USB hardware \\
+     \emph{Python (NumPy, Scipy, Bokeh, Flask), C++11 (STL), CUDA, MATLAB, Windows API}
+        \vspace{-5pt}
+        \begin{itemize}
+            \item Developed application to scan and process data at a rate of 20 mega samples per second (MS/s)
+            \item Utilized asynchronous scheduling to conduct multiple back-to-back scans with minimal idle time
+            \item First of its kind user interface for commercial and industrial applications
+        \end{itemize}
+     }
+     \resumeSubItem{Agent Based Model}
+     {An agent based model for the spread of measles in secondary schools \\
+     \emph{C++ (STL), Python (NumPy, Pandas), MATLAB}
+        \vspace{-5pt}
+        \begin{itemize}
+            \item Designed extremely extendable model of agents in a secondary school environment
+            \item Engineered to process one day (over 15,000 stochastically generated actions) in less than 60 milliseconds, saving days of compute time
+        \end{itemize}
+     }
+     \resumeSubItem{Y.U.R.I}
+     {Multimedia object detection software powered by deep learning \\
+     \emph{Python (NumPy, SciPy, Flask, OpenCV)}
+        \vspace{-5pt}
+        \begin{itemize}
+            \item Lead a team of developers to create a complex compute-intensive application
+            \item Implemented Mask-RCNN object detection algorithm in an easy-to-use web application
+            \item Capable of GPU hardware acceleration for even faster object detection
+            \item Achived 100\% as final project in ICS4U Computer Science course 
+        \end{itemize}
+     }
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\shorterSection{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Westmount Collegiate Institute}{Vaughan, ON}
+      {Ontario Secondary School Diploma}{Expected June 2020}{
+      \resumeItemNoBullet{GPA}{4.0}
+      \resumeItemNoBullet{Involvment}{President of Computer Science club, Vice-President of Model UN}
+    }
+  \resumeSubHeadingListEnd
+
+%-----------Addtional Experience & Achievements-----------------
+\shorterSection{Additional Experience \& Achievements}
+  \resumeSubHeadingListStart
+  \small
+    \item{Placed top 25\% of students in the \textbf{Canadian Computing Competition}}
+    \vspace{-5pt}
+    \item{Achieved silver award in \textbf{The Queen's Commonwealth Essay Competition}}
+    \vspace{-5pt}
+    \item{Earned 100\% in TEJ3U Computer Engineering course for being the first person to develop a functioning version of Tetris for the Arduino}
+    \vspace{-5pt}
+    \item{Volunteer at local elementary school by controlling audio equipment (mixing boards, microphoens) for assemblies of 1000+ people}
+    \vspace{-5pt}
+    \item{Award-winning classical guitar player of over 10 years. Won multiple first place trophies at the \textbf{North York Music Festival}}
+    \vspace{-5pt}
+    \item{Elected as president of Computer Science club at Westmount Collegiate Institute for strong aptitude in mathematics and computer science}
+  \resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}
