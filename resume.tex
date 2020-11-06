@@ -1,7 +1,7 @@
 % David Gurevich resume
 % Accurate as of: August 20, 2020
 
-\documentclass[letterpaper,10pt]{article}
+\documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
 \usepackage{tabularx}
@@ -119,23 +119,10 @@
       {York University}{Toronto, ON}
       {Research Assistant}{January 2019 - August 2019}
       \resumeItemListStart
-        \resumeItem{Measles Research}
-          {Conducted original epidemiological research to model the dynamics of measles in secondary schools
-            \begin{itemize}
-                \item Implemented a deterministic ordinary differential equation model that models the population compartmentalization of students in secondary schools during a measles outbreak (MATLAB, Python)
-                \item Designed and developed an Agent-Based Model (ABM) alternative to the ODE model with improved accuracy and realism. Improved execution time by a factor of over 17,000 (C++17, Python)
-                \item Documented findings in an epidemiological report co-authored by supervisor
-            \end{itemize}
-          }
-        \resumeItem{Typesetting}
-          {Typeset course notes for supervisor using \LaTeX{}}
-        \resumeItem{SMB Conference}
-          {Helped plan 2019 Annual Society for Mathematical Biology meeting
-          \begin{itemize}
-              \item Aided in scheduling hundreds of speakers and presentations in a quick and efficient manner
-              \item Developed Python and Shell scripts to automate repetitive tasks
-          \end{itemize}
-          }
+      \resumeItem{Mathematical Research}{Conducted original epidemiological research to design an ODE model to simulate the dynamics of a measles outbreak in secondary schools. (MATLAB, Python)}
+      \resumeItem{Computation Model}{Designed and implemented an Agent-Based Model alternative to the ODE model with improved accuracy and realism. (C++17, Python)}
+      \resumeItem{Software Optimization}{Implemented certain improvements in software (multi-threading, data structure optimization) to improve execution time by a factor of over 17,000, saving days of compute time. (C++17)}
+      \resumeItem{Conference Planning}{Helped plan 2019 Annual Society for Mathematical Biology meeting. Developed Python and Shell scripts to automate repetitive tasks.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -148,7 +135,7 @@
           {Developed a high-throughput, multi-threaded Python application for acquisition and processing of high frequency analog signals within strict operational requirements}
         \resumeItem{Scientific Collaboration}
           {Collaborated with team of scientists to develop and implement novel digital phase demodulation algorithm}
-        \resumeItem{Cost-saving Innovation}
+        \resumeItem{Cost-saving Improvements}
           {Worked within strict budget requirements to create an effective low-cost solution, demonstrated in an ultrasonic flow-measurement application}
       \resumeItemListEnd
 
@@ -157,27 +144,6 @@
 %-----------PROJECTS-----------------
 \shorterSection{Projects}
   \resumeSubHeadingListStart
-     \resumeSubItem{Agent Based Model}
-     {An agent based model for the spread of measles in secondary schools \\
-     \emph{C++ (STL), Python (NumPy, Pandas), MATLAB}
-        \vspace{-5pt}
-        \begin{itemize}
-            \item Designed extremely extensible model of agents in a secondary school environment
-            \item Engineered to process one day (over 15,000 randomly generated actions) in less than 60 milliseconds, saving days of compute time
-            \item Verified against custom, independently constructed ODE SVEIR model
-        \end{itemize}
-     }
-     \resumeSubItem{Object detection web app}
-     {Multimedia object detection software powered by deep learning \\
-     \emph{Python (NumPy, SciPy, Flask, OpenCV)}
-        \vspace{-5pt}
-        \begin{itemize}
-            \item Lead a team of developers to create a complex compute-intensive service
-            \item Implemented Mask-RCNN object detection algorithm in an easy-to-use web application
-            \item Capable of GPU hardware acceleration for even faster object detection
-            \item Achieved 100\% as final project in ICS4U Computer Science course
-        \end{itemize}
-     }
      \resumeSubItem{Trading Bot}
      {Python implementation of custom stock trading algorithm that outperforms market by as much as 220\% \\
      \emph{Python (NumPy, Pandas, Matplotlib)}
@@ -187,6 +153,17 @@
             \item Designed custom strategy testing framework for easier evaluation
             \item Invented mathematical method of predicting scale of stock growth
             \item Tested performance of strategy against market growth -- performs at or above market levels in almost all cases
+        \end{itemize}
+     }
+  \resumeSubItem{Object detection web app}
+     {Multimedia object detection software powered by deep learning \\
+     \emph{Python (NumPy, SciPy, Flask, OpenCV)}
+        \vspace{-5pt}
+        \begin{itemize}
+            \item Lead a team of developers to create a complex compute-intensive service
+            \item Implemented Mask-RCNN object detection algorithm in an easy-to-use web application
+            \item Capable of GPU hardware acceleration for even faster object detection
+            \item Achieved 100\% as final project in ICS4U Computer Science course
         \end{itemize}
      }
   \resumeSubHeadingListEnd
