@@ -103,14 +103,25 @@
     } \vspace{-5pt}
 
     \item{
-        \textbf{Libraries}{: NumPy, SciPy, Pandas, Matplotlib, Flask, OpenCV, CTypes}
+        \textbf{Libraries}{: NumPy, SciPy, Pandas, Matplotlib, Flask, OpenCV, FFTW, CTypes}
     } \vspace{-5pt}
 
     \item{
-        \textbf{Tools/Environments}{: Git, Vim, JetBrains IDEs, gdb, Make, CMake, Visual Studio, Linux, Windows}
+        \textbf{Tools/Environments}{: Git, Vim, JetBrains IDEs, gdb, CMake, Tableau, Microsoft Excel, Linux, Windows}
     }
+
 \resumeSubHeadingListEnd
 
+%-----------EDUCATION-----------------
+\shorterSection{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Waterloo}{Waterloo, ON}
+      {Candidate for Bachelor of Mathematics, Computer Science}{Expected Graduation: 2025}{
+
+      \hspace{-12pt} Relevant courses: Linear Algebra, Calculus, Microeconomics, Probability, Algorithm Design and Data Abstraction\\ \hspace{-10pt}GPA: 3.87/4.00}
+
+  \resumeSubHeadingListEnd
 %-----------EXPERIENCE-----------------
 \shorterSection{Experience}
  \resumeSubHeadingListStart
@@ -144,39 +155,27 @@
 %-----------PROJECTS-----------------
 \shorterSection{Projects}
   \resumeSubHeadingListStart
+  \resumeSubItem{3D Sound Synthesis}
+  {Make any sound appear as though it is coming from somewhere else \\
+      \emph{C++ (STL, FFTW, CMake), MATLAB}
+        \vspace{-5pt}
+        \begin{itemize}
+            \item Designed a custom algorithm for 3D sound synthesis, given a position on the unit sphere
+            \item Prototyped in MATLAB, with extremely efficient implementation in well documented C++ code
+            \item Performed an extensive literature survey to determine the state-of-the-art in 3D sound synthesis
+        \end{itemize}
+     }
      \resumeSubItem{Trading Bot}
      {Python implementation of custom stock trading algorithm \\
      \emph{Python (NumPy, Pandas, Matplotlib)}
         \vspace{-5pt}
         \begin{itemize}
             \item Custom algorithm performs at or above market levels in almost all cases -- as much as 220\% above market
-            \item Developed mathematical method for prediction of scale of stock growth
-            \item Designed custom strategy testing framework for easier evaluation
+            \item Developed mathematical method for prediction of scale of asset growth
+            \item Designed custom strategy backtesting framework for easier evaluation
             \item Investigated and evaluated various data analysis techniques
         \end{itemize}
      }
-  \resumeSubItem{Object detection web app}
-     {Multimedia object detection software powered by deep learning \\
-     \emph{Python (NumPy, SciPy, Flask, OpenCV)}
-        \vspace{-5pt}
-        \begin{itemize}
-            \item Lead a team of developers to create a complex compute-intensive service
-            \item Implemented Mask-RCNN object detection algorithm in an easy-to-use web application
-            \item Effectively scheduled compute-intensive jobs to handle multiple users at once
-        \end{itemize}
-     }
   \resumeSubHeadingListEnd
-
-%-----------EDUCATION-----------------
-\shorterSection{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {University of Waterloo}{Waterloo, ON}
-      {Candidate for Bachelor of Mathematics, Computer Science}{2020 - Present}{
-
-          \hspace{-12pt} Relevant courses: Linear Algebra, Calculus, Functional Programming, Algorithm Design and Data Abstraction}
-
-  \resumeSubHeadingListEnd
-
 
 \end{document}
