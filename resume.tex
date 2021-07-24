@@ -44,9 +44,9 @@
 
 %-------------------------
 % Custom commands
-\newcommand{\resumeItem}[2]{
+\newcommand{\resumeItem}[1]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    {#1 \vspace{-2pt}}
   }
 }
 
@@ -99,7 +99,7 @@
   \resumeSubHeadingListStart
   \small
     \item{
-        \textbf{Languages}{: Python, C++, C, MATLAB, SQL, Shell scripting}
+        \textbf{Languages}{: Python, C++, C, Rust, MATLAB, SQL, Shell scripting}
     } \vspace{-5pt}
 
     \item{
@@ -107,7 +107,7 @@
     } \vspace{-5pt}
 
     \item{
-        \textbf{Tools/Environments}{: Git, Vim, JetBrains IDEs, gdb, CMake, Tableau, Microsoft Excel}
+        \textbf{Tools/Environments}{: Git, Vim, JetBrains IDEs, gdb, Docker,  CMake, Microsoft Excel}
     }
 
 \resumeSubHeadingListEnd
@@ -117,27 +117,30 @@
  \resumeSubHeadingListStart
 
     \resumeSubheading
+      {Applied Mind, Inc}{Ottawa, ON}
+      {Embedded Software Development Intern}{May 2021 - August 2021}
+      \resumeItemListStart
+      \resumeItem{Developed multithreaded radio signal acquisition software in Rust to receive and process LTE signals at over 60 MS/s}
+      \resumeItem{Made use of DMA and CPU caching in order to transfer received data from FPGA to processor at over 1 GB/s}
+      \resumeItem{Designed and deployed custom Continuous Integration workflow for embedded software using GitHub Actions}
+      \resumeItem{Implemented Linux userspace drivers in Rust and C for radios and high-performance clocks}
+      \resumeItemListEnd
+
+    \resumeSubheading
       {Research in Flows, Inc}{Brampton, ON}
       {Software Engineer}{February 2018 - September 2020}
       \resumeItemListStart
-        \resumeItem{Research and Development}
-          {Responsible for the ground-up architecture and development of a low-cost digital phase demodulation system for high frequency signal analysis in industrial applications}
-        \resumeItem{High Performance}
-          {Developed a high-throughput, multi-threaded Python application for acquisition and processing of high frequency analog signals within strict operational requirements}
-        \resumeItem{Digital Signal Processing}
-        {Collaborated on and prototyped custom digital signal processing algorithms in MATLAB with final implementation in C++}
-        \resumeItem{Low-Cost Design}
-          {Worked within strict budget requirements to source OEM hardware that is cheaper than competition, but delivers improved results}
+        \resumeItem{Responsible for the ground-up architecture and development of a low-cost digital signal processing system for high frequency signal analysis in industrial applications}
+        \resumeItem{Developed a high-throughput, multi-threaded Python application for acquisition and processing of high frequency analog signals within strict operational requirements}
+        \resumeItem{Collaborated on and prototyped custom signal processing algorithms in MATLAB with final implementation in C++}
       \resumeItemListEnd
 
     \resumeSubheading
       {York University}{Toronto, ON}
       {Research Assistant}{January 2019 - August 2019}
       \resumeItemListStart
-      \resumeItem{Mathematical Research}{Conducted original epidemiological research to design an ODE model to simulate the dynamics of a measles outbreak in secondary schools, with implementation in MATLAB}
-      \resumeItem{Computational Model}{Designed and implemented an Agent-Based Model alternative to the ODE model in C++ with improved accuracy and realism}
-      \resumeItem{Software Optimization}{Implemented certain improvements in C++17 software (multi-threading, data structure optimization) to improve execution time by a factor of over 17,000, saving days of compute time}
-      \resumeItem{Conference Planning}{Supported the planning of the 2019 Annual Society for Mathematical Biology meeting. Developed Python and Shell scripts to automate repetitive tasks}
+      \resumeItem{Conducted original epidemiological research to design an ODE model to simulate the dynamics of a virus outbreak in secondary schools, with implementation in MATLAB and C++}
+      \resumeItem{Implemented certain improvements in C++ software (multi-threading, data structure optimization) to improve execution time by a factor of over 17,000 -- saving days of compute time}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -145,16 +148,6 @@
 %-----------PROJECTS-----------------
 \shorterSection{Projects}
   \resumeSubHeadingListStart
-  \resumeSubItem{\href{https://github.com/davidgur/3d-sound-synthesis}{3D Sound Synthesis}}
-  {Make any sound appear as though it is coming from somewhere else \\
-      \emph{C++ (STL, FFTW, CMake), MATLAB}
-        \vspace{-5pt}
-        \begin{itemize}
-            \item Designed a custom algorithm for 3D sound synthesis, given a position on the unit sphere using various DSP methods
-            \item Prototyped in MATLAB, with memory efficient implementation in well documented C++ code
-            \item Performed an extensive literature survey to determine the state-of-the-art in 3D sound synthesis
-        \end{itemize}
-     }
      \resumeSubItem{Radar-based Drone Identification}
      {Novel machine learning based approach to the identification of drones from radar signals \\
      \emph{Python (NumPy, Matplotlib, SciPy, TensorFlow)}
@@ -166,6 +159,16 @@
             \item Utilized TensorFlow to fit a Convolution Neural Network classification model based on state of the art research
         \end{itemize}
      }
+  \resumeSubItem{\href{https://github.com/davidgur/3d-sound-synthesis}{3D Sound Synthesis}}
+  {Localize audio to a particular location around the listener \\
+      \emph{C++ (STL, FFTW, CMake), MATLAB}
+        \vspace{-5pt}
+        \begin{itemize}
+            \item Designed a custom algorithm for 3D sound synthesis, given a position on the unit sphere using various DSP methods
+            \item Prototyped in MATLAB, with memory efficient implementation in well documented C++ code
+            \item Performed an extensive literature survey to determine the state-of-the-art in 3D sound synthesis
+        \end{itemize}
+     }
   \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------------
@@ -175,7 +178,8 @@
       {University of Waterloo}{Waterloo, ON}
       {Candidate for Bachelor of Mathematics, Computer Science}{Expected Graduation: 2025}{
 
-      \hspace{-12pt} GPA: 3.90/4.00}
+      \hspace{-12pt} GPA: 3.96/4.00 \\
+      \hspace{-12pt} Level: 2A}
 
   \resumeSubHeadingListEnd
 
