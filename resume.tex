@@ -64,6 +64,21 @@
     \end{tabular*}\vspace{-5pt}
 }
 
+
+\newcommand{\resumeSubheadingA}[2]{
+  \vspace{-1pt}\item[]
+  \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+      \hspace{-10pt}\textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-24pt}
+}
+
+\newcommand{\resumeSubheadingB}[2]{
+  \vspace{-10pt}\item[]
+  \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+      \hspace{-10pt}\textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
 \newcommand{\resumeSubItem}[2]{\resumeItemNoBullet{#1}{#2}\vspace{-4pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
@@ -116,9 +131,14 @@
 \shorterSection{Experience}
  \resumeSubHeadingListStart
 
-    \resumeSubheading
-      {Applied Mind, Inc}{Ottawa, ON}
-      {Embedded Software Development Intern}{May 2021 - August 2021}
+    \resumeSubheadingA{Applied Mind, Inc}{Ottawa, ON}
+    \resumeSubheadingB{Software Development Intern}{January 2022 - Present}
+      \resumeItemListStart
+      \resumeItem{Implemented sensor fusion algorithms (Kalman filter) in Python to eliminate error in measurements by 75\%}
+      \resumeItem{Performed literature review to determine and implement state of the art of emitter localization methods}
+      \resumeItemListEnd
+
+    \resumeSubheadingB{Embedded Software Development Intern}{May 2021 - August 2021}
       \resumeItemListStart
       \resumeItem{Developed multithreaded radio signal acquisition software in Rust to receive and process LTE signals at over 60 MS/s}
       \resumeItem{Made use of DMA and CPU caching in order to transfer received data from FPGA to processor at over 1 GB/s}
@@ -159,6 +179,7 @@
             \item Utilized TensorFlow to fit a Convolution Neural Network classification model based on state of the art research
         \end{itemize}
      }
+     \vspace{5pt}
   \resumeSubItem{\href{https://github.com/davidgur/3d-sound-synthesis}{3D Sound Synthesis}}
   {Localize audio to a particular location around the listener \\
       \emph{C++ (STL, FFTW, CMake), MATLAB}
@@ -166,7 +187,6 @@
         \begin{itemize}
             \item Designed a custom algorithm for 3D sound synthesis, given a position on the unit sphere using various DSP methods
             \item Prototyped in MATLAB, with memory efficient implementation in well documented C++ code
-            \item Performed an extensive literature survey to determine the state-of-the-art in 3D sound synthesis
         \end{itemize}
      }
   \resumeSubHeadingListEnd
