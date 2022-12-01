@@ -1,5 +1,5 @@
 % David Gurevich resume
-% Accurate as of: August 20, 2020
+% Accurate as of: 2022-12-01
 
 \documentclass[letterpaper,11pt]{article}
 
@@ -114,7 +114,7 @@
   \resumeSubHeadingListStart
   \small
     \item{
-        \textbf{Languages}{: Python, C++, C, Rust, MATLAB, SQL, Shell scripting}
+        \textbf{Languages}{: Python, C++, C, Rust, MATLAB, Scheme, SQL, Shell scripting}
     } \vspace{-5pt}
 
     \item{
@@ -127,42 +127,56 @@
 
 \resumeSubHeadingListEnd
 
+%-----------EDUCATION-----------------
+\shorterSection{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Waterloo}{Waterloo, ON}
+      {Candidate for Bachelor of Mathematics, Computer Science}{Expected Graduation: April 2025}
+  \resumeSubHeadingListEnd
+
 %-----------EXPERIENCE-----------------
 \shorterSection{Experience}
  \resumeSubHeadingListStart
     \resumeSubheading
       {Microchip Technologies, Inc}{Toronto, ON}
-      {Software Engineering Intern}{September 2022 - December 2022}
+      {Software Engineering Intern}{September 2022 - Present}
       \resumeItemListStart
-        \resumeItem{Working with C and C++ to develop SmartHLS high-level synthesis solution for FPGA programming}
+        \resumeItem{Responsible for porting and documenting SmartHLS FPGA high-level synthesis build system from Makefiles to \textbf{Python}, allowing for Windows compatibility and improved maintainability}
+        \resumeItem{Implemented improvements and developed data structures in \textbf{C++} which eliminated non-determinism in LLVM-based synthesis from C/C++ to Verilog, allowing for improved integration testing}
+        \resumeItem{Worked on a team of a dozen engineers to help fix bugs submitted by customers}
+
       \resumeItemListEnd
+      \vspace{-5pt}
 
     \resumeSubheading
       {Applied Mind, Inc}{Ottawa, ON}
       {Software Development Intern}{January 2022 - April 2022}
       \resumeItemListStart
-      \resumeItem{Designed and implemented high-speed data streaming application for embedded system in Rust within soft real-time performance constraints}
-      \resumeItem{Implemented sensor fusion algorithms (TDOA, Kalman filter) in Python to eliminate error in RF emitter location estimates by 75\%}
-      \resumeItem{Performed literature review to determine and implement state of the art of signal emitter localization methods}
+      \resumeItem{Performed novel research to design and implement optimal algorithm for signal emitter localization}
+      \resumeItem{Implemented sensor fusion algorithms (\textbf{Kalman filter}, TDOA) in \textbf{Python} to eliminate error in RF emitter location estimates from 2 meters to 0.5 meters}
+      \resumeItem{Designed and implemented high-speed data streaming application for \textbf{embedded Linux} system in \textbf{Rust} within soft real-time performance constraints}
       \resumeItemListEnd
-
+      \vspace{-5pt}
+      
     \resumeSubheading
       {Applied Mind, Inc}{Ottawa, ON}
       {Embedded Software Development Intern}{May 2021 - August 2021}
       \resumeItemListStart
-      \resumeItem{Developed multithreaded radio signal acquisition software in Rust to receive and process LTE signals at over 60 MS/s}
-      \resumeItem{Made use of DMA and CPU caching in order to transfer received data from FPGA to processor at over 1 GB/s}
+      \resumeItem{Developed multithreaded radio signal acquisition software in \textbf{Rust} to receive and process LTE signals at over 60 MS/s}
+      \resumeItem{Made use of \textbf{DMA} and CPU caching in order to transfer received data from FPGA to processor at over 1 GB/s}
       \resumeItem{Designed and deployed custom Continuous Integration workflow for embedded software using GitHub Actions}
-      \resumeItem{Implemented Linux userspace drivers in Rust and C for radios and high-performance clocks}
+      \resumeItem{Implemented Linux userspace drivers in \textbf{Rust} and \textbf{C} for radios and high-performance clocks}
       \resumeItemListEnd
+      \vspace{-5pt}
 
 
-    \resumeSubheading
-      {York University}{Toronto, ON}
-      {Research Assistant}{January 2019 - August 2019}
-      \resumeItemListStart
-      \resumeItem{Conducted original epidemiological research to design an ODE model to simulate the dynamics of a virus outbreak in secondary schools, with implementation in MATLAB and C++}
-      \resumeItemListEnd
+%    \resumeSubheading
+%      {York University}{Toronto, ON}
+%      {Research Assistant}{January 2019 - August 2019}
+%      \resumeItemListStart
+%      \resumeItem{Conducted original epidemiological research to design an ODE model to simulate the dynamics of a virus outbreak in secondary schools, with implementation in MATLAB and C++}
+%      \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
@@ -176,7 +190,7 @@
         \begin{itemize}
             \item Developed a novel approach to the identification of drone types from noisy radar signals
             \item Approach won second place in competition organized by CANSOFCOM, DRDC, and Hack The North
-            \item Utilized TensorFlow to fit a Convolution Neural Network classification model based on state of the art research
+            \item Utilized \textbf{TensorFlow} to fit a CNN classification model based on state of the art research
         \end{itemize}
      }
      \vspace{5pt}
@@ -185,8 +199,8 @@
       \emph{C++ (STL, FFTW, CMake), MATLAB}
         \vspace{-5pt}
         \begin{itemize}
-            \item Designed a custom algorithm for 3D sound synthesis, given a position on the unit sphere using various DSP methods
-            \item Prototyped in MATLAB, with final implementation in C++
+            \item Designed a custom algorithm for 3D sound synthesis, given a position on the unit sphere using various \textbf{DSP} methods
+            \item Prototyped in \textbf{MATLAB}, with final implementation in \textbf{C++}
         \end{itemize}
      }
      \vspace{5pt}
@@ -195,18 +209,12 @@
          \emph{Python (NumPy, Matplotlib, SciPy), C++, MATLAB}
         \vspace{-5pt}
         \begin{itemize}
-            \item Developed high throughput, multi-threaded Python application for acquisition and processing of high frequency analog signals within strict operational requirements
-            \item Collaborated on and prototyped custom signal processing algorithms in MATLAB, with implementation in C++
+            \item Developed high throughput, multi-threaded \textbf{Python} application for acquisition and processing of high frequency analog signals within strict operational requirements
+            \item Collaborated on and prototyped custom signal processing algorithms in \textbf{MATLAB}, with implementation in \textbf{C++}
         \end{itemize}
      }
   \resumeSubHeadingListEnd
 
-%-----------EDUCATION-----------------
-\shorterSection{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {University of Waterloo}{Waterloo, ON}
-      {Candidate for Bachelor of Mathematics, Computer Science}{Expected Graduation: April 2025}
-  \resumeSubHeadingListEnd
+
 
 \end{document}
