@@ -106,46 +106,61 @@
             \href{tel:14164140515}{\texttt{(416) 414 0515}} \\
             \href{http://gurevich.ca}{\texttt{gurevich.ca}}
         \end{tabular}
+        \vspace{-10pt}
     \end{tabularx}
 \end{table}
 
 %-----------SKILLS-----------------
 \shorterSection{Technical Skills}
-  \resumeSubHeadingListStart
-  \small
-    \item{
+\resumeSubHeadingListStart
+\small
+\item{
         \textbf{Languages}{: Python, C++, C, Rust, MATLAB, Scheme, SQL, Shell scripting}
     } \vspace{-5pt}
 
-    \item{
-        \textbf{Libraries}{: NumPy, SciPy, Pandas, Matplotlib, Flask, OpenCV, FFTW, CTypes}
+\item{
+        \textbf{Libraries}{: NumPy, SciPy, Pandas, PyTorch, Matplotlib, Flask, OpenCV, FFTW, CTypes}
     } \vspace{-5pt}
 
-    \item{
-        \textbf{Tools/Environments}{: Git, Vim, JetBrains IDEs, gdb, Docker,  CMake, Buildroot}
+\item{
+        \textbf{Tools/Environments}{: Git, Vim, JetBrains IDEs, gdb, Docker,  CMake, Buildroot, RFNoC}
     }
 
-\resumeSubHeadingListEnd
+    \resumeSubHeadingListEnd
 
-%-----------EDUCATION-----------------
+    %-----------EDUCATION-----------------
+    \vspace{-3pt}
 \shorterSection{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
       {University of Waterloo}{Waterloo, ON}
       {Candidate for Bachelor of Mathematics, Computer Science}{Expected Graduation: April 2025}
+
+    \resumeItem{\vspace{-5pt}
+        \textit{Extracurricular Research}: Within OpAL Lab, investigated the efficacy of large language models like LLaMA in performing graph clustering tasks.
+    }
   \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
+\vspace{-2pt}
 \shorterSection{Experience}
  \resumeSubHeadingListStart
+    \resumeSubheading
+      {MathWorks, Inc}{Glasgow, UK}
+      {Software Engineer in Test Intern}{May 2023 - August 2023}
+      \resumeItemListStart
+      \resumeItem{Improved open-source UHD hardware simulator with \textbf{Python}, enriching its versatility and speed for cost-effective testing. Enabled dynamic re-routing of RFNoC radio signal processing blocks during tests.}
+        \resumeItem{Enhanced the \textbf{C++} based high-speed data acquisition interface, ensuring accurate performance benchmarking and optimal system evaluation.}
+        \resumeItem{Consolidated several RF processing chains to reduce the number of \textbf{FPGA} bitstreams required for building and testing MATLAB Wireless Testbench by 50\%, resulting in a 4+ hour reduction in daily build time.}
+
+      \resumeItemListEnd
+      \vspace{-5pt}
     \resumeSubheading
       {Microchip Technologies, Inc}{Toronto, ON}
       {Software Engineering Intern}{September 2022 - December 2022}
       \resumeItemListStart
-        \resumeItem{Responsible for porting and documenting SmartHLS FPGA high-level synthesis build system from Makefiles to \textbf{Python}, allowing for Windows compatibility and improved maintainability}
-        \resumeItem{Implemented improvements and developed data structures in \textbf{C++} which eliminated non-determinism in LLVM-based synthesis from C/C++ to Verilog, allowing for improved integration testing}
-        \resumeItem{Worked on a team of a dozen engineers to help fix bugs submitted by customers}
-
+        \resumeItem{Responsible for porting and documenting SmartHLS FPGA high-level synthesis build system from Makefiles to \textbf{Python}, allowing for Windows compatibility and improved maintainability.}
+        \resumeItem{Implemented improvements and developed data structures in \textbf{C++} which eliminated non-determinism in LLVM-based synthesis from C/C++ to Verilog, allowing for improved integration testing.}
       \resumeItemListEnd
       \vspace{-5pt}
 
@@ -153,9 +168,8 @@
       {Applied Mind, Inc}{Ottawa, ON}
       {Software Development Intern}{January 2022 - April 2022}
       \resumeItemListStart
-      \resumeItem{Performed novel research to design and implement optimal algorithm for signal emitter localization}
-      \resumeItem{Implemented sensor fusion algorithms (\textbf{Kalman filter}, TDOA) in \textbf{Python} to eliminate error in RF emitter location estimates from 2 meters to 0.5 meters}
-      \resumeItem{Designed and implemented high-speed data streaming application for \textbf{embedded Linux} system in \textbf{Rust} within soft real-time performance constraints}
+      \resumeItem{Performed novel research to design and implement sensor fusion algorithms (using \textbf{Kalman filter}, TDOA) in \textbf{Python} to eliminate error in RF emitter location estimates from 2 meters to 0.5 meters.}
+      \resumeItem{Designed and implemented high-speed data streaming application for \textbf{embedded Linux} system in \textbf{Rust} within soft real-time performance constraints.}
       \resumeItemListEnd
       \vspace{-5pt}
       
@@ -163,12 +177,12 @@
       {Applied Mind, Inc}{Ottawa, ON}
       {Embedded Software Development Intern}{May 2021 - August 2021}
       \resumeItemListStart
-      \resumeItem{Developed multithreaded radio signal acquisition software in \textbf{Rust} to receive and process LTE signals at over 60 MS/s}
-      \resumeItem{Made use of \textbf{DMA} and CPU caching in order to transfer received data from FPGA to processor at over 1 GB/s}
-      \resumeItem{Designed and deployed custom Continuous Integration workflow for embedded software using GitHub Actions}
-      \resumeItem{Implemented Linux userspace drivers in \textbf{Rust} and \textbf{C} for radios and high-performance clocks}
+      \resumeItem{Developed multithreaded radio signal acquisition software in \textbf{Rust} to receive and process LTE signals at over 60 MS/s.}
+      \resumeItem{Made use of \textbf{DMA} and \textbf{CPU caching} in order to transfer received data from FPGA to processor at over 1 GB/s.}
+      \resumeItem{Designed and deployed custom Continuous Integration workflow for embedded software using GitHub Actions.}
+      \resumeItem{Implemented Linux userspace drivers in \textbf{Rust} and \textbf{C} for radios and high-performance clocks.}
       \resumeItemListEnd
-      \vspace{-5pt}
+      %\vspace{-5pt}
 
 
 %    \resumeSubheading
@@ -183,37 +197,28 @@
 %-----------PROJECTS-----------------
 \shorterSection{Projects}
   \resumeSubHeadingListStart
-     \resumeSubItem{Radar-based Drone Identification}
-     {Novel machine learning based approach to the identification of drones from radar signals \\
-     \emph{Python (NumPy, Matplotlib, SciPy, TensorFlow)}
-        \vspace{-5pt}
-        \begin{itemize}
-            \item Developed a novel approach to the identification of drone types from noisy radar signals
-            \item Approach won second place in competition organized by CANSOFCOM, DRDC, and Hack The North
-            \item Utilized \textbf{TensorFlow} to fit a CNN classification model based on state of the art research
-        \end{itemize}
-     }
      \vspace{5pt}
   \resumeSubItem{\href{https://github.com/davidgur/3d-sound-synthesis}{3D Sound Synthesis}}
-  {Localize audio to a particular location around the listener \\
+  {Localize audio to a particular location around the listener. \\
       \emph{C++ (STL, FFTW, CMake), MATLAB}
         \vspace{-5pt}
         \begin{itemize}
-            \item Designed a custom algorithm for 3D sound synthesis, given a position on the unit sphere using various \textbf{DSP} methods
-            \item Prototyped in \textbf{MATLAB}, with final implementation in \textbf{C++}
+            \item Designed a custom algorithm for 3D sound synthesis, given a position on the unit sphere using various \textbf{DSP} methods.
+            \item Prototyped in \textbf{MATLAB}, with final implementation in \textbf{C++}.
         \end{itemize}
      }
      \vspace{5pt}
-     \resumeSubItem{Cross-correlation fluid flow meter}
-     {Low-cost signal acquisition and processing system for ultrasonic fluid flow measurement\\
+     \resumeSubItem{Cross-Correlation Fluid Flow Meter}
+     {Low-cost signal acquisition and processing system for ultrasonic fluid flow measurement.\\
          \emph{Python (NumPy, Matplotlib, SciPy), C++, MATLAB}
         \vspace{-5pt}
         \begin{itemize}
-            \item Developed high throughput, multi-threaded \textbf{Python} application for acquisition and processing of high frequency analog signals within strict operational requirements
+            \item Developed high throughput, multi-threaded \textbf{Python} application for acquisition and processing of ultrasonic signals within strict operational requirements.
             \item Collaborated on and prototyped custom signal processing algorithms in \textbf{MATLAB}, with implementation in \textbf{C++}
         \end{itemize}
      }
   \resumeSubHeadingListEnd
+
 
 
 
