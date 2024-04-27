@@ -64,6 +64,13 @@
     \end{tabular*}\vspace{-5pt}
 }
 
+\newcommand{\resumeSubsubheading}[1]{
+    \vspace{-25pt}\item[]
+    \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+        \hspace{-10pt}\emph{\textbf{\small#1}}
+    \end{tabular*}\vspace{-5pt}
+}
+
 
 \newcommand{\resumeSubheadingA}[2]{
   \vspace{-1pt}\item[]
@@ -119,12 +126,8 @@
     } \vspace{-5pt}
 
 \item{
-        \textbf{Libraries}{: NumPy, SciPy, Pandas, PyTorch, Matplotlib, Flask, OpenCV, FFTW, CTypes}
+        \textbf{Libraries}{: NumPy, SciPy, Pandas, PyTorch, TensorFlow, sklearn, Matplotlib, Flask, OpenCV, FFTW, CTypes}
     } \vspace{-5pt}
-
-\item{
-        \textbf{Tools/Environments}{: Git, Vim, JetBrains IDEs, gdb, Docker,  CMake, Buildroot, RFNoC}
-    }
 
     \resumeSubHeadingListEnd
 
@@ -134,10 +137,16 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {University of Waterloo}{Waterloo, ON}
-      {Candidate for Bachelor of Mathematics, Computer Science}{Expected Graduation: April 2025}
-
+      {Bachelor of Mathematics in Computer Science and Computational Mathematics}{Expected Graduation: April 2025}
+    \vspace{1pt}
     \resumeItem{\vspace{-5pt}
-        \textit{Extracurricular Research}: Within OpAL Lab, investigated the efficacy of large language models like LLaMA in performing graph clustering tasks.
+        \emph{\textbf{Quickest Change Detection}}: Performed supervised research on non-parametric quickest changepoint detection of high-dimensional data on low power systems.
+    }
+    \resumeItem{\vspace{-5pt}
+        \emph{\textbf{Spiking Neural Networks}}: Investigated ability of spiking neural networks in solving certain classes of partial differential equations on neuromorphic hardware.
+    }
+    \resumeItem{\vspace{-5pt}
+        \emph{\textbf{LLM Research}}: Investigated the efficacy of LLM's like LLaMA in performing graph clustering tasks.
     }
   \resumeSubHeadingListEnd
 
@@ -146,10 +155,20 @@
 \shorterSection{Experience}
  \resumeSubHeadingListStart
     \resumeSubheading
-      {MathWorks, Inc}{Glasgow, UK}
+      {Enlighted -- Siemens AG}{Waterloo, ON}
+      {IoT Research Intern}{January 2024 - April 2024}
+    \resumeItemListStart
+    \resumeItem{Independently researched and developed a data-efficient \textbf{LSTM}-based approach to perform RSSI-based localization of Bluetooth Low Energy (BLE) assets using \textbf{TensorFlow}.}
+      \resumeItem{New machine learning-based approach achieves accuracy of 2 metres, compared to 4.5 metre accuracy of previous solution, with improved trajectory estimation and decreased time delay.}
+      \resumeItem{Developed data-driven \textbf{channel estimation} utilities to facilitate conversion from signal strength (dBm) to distance.}
+      \resumeItem{Performed mathematical analysis on optimal estimators (CRLB) and filters (Kalman) to establish benchmarks.}
+    \resumeItemListEnd
+    \vspace{-10pt}
+    \resumeSubheading
+      {MathWorks, Inc}{Glasgow, Scotland}
       {Software Engineer in Test Intern}{May 2023 - August 2023}
       \resumeItemListStart
-      \resumeItem{Improved open-source UHD hardware simulator with \textbf{Python}, enriching its versatility and speed for cost-effective testing. Enabled dynamic re-routing of RFNoC radio signal processing blocks during tests.}
+      \resumeItem{Improved open-source UHD hardware simulator with \textbf{Python}, enriching its versatility for cost-effective testing.}
         \resumeItem{Enhanced the \textbf{C++} based high-speed data acquisition interface, ensuring accurate performance benchmarking and optimal system evaluation.}
         \resumeItem{Consolidated several RF processing chains to reduce the number of \textbf{FPGA} bitstreams required for building and testing MATLAB Wireless Testbench by 50\%, resulting in a 4+ hour reduction in daily build time.}
 
@@ -180,44 +199,33 @@
       \resumeItem{Developed multithreaded radio signal acquisition software in \textbf{Rust} to receive and process LTE signals at over 60 MS/s.}
       \resumeItem{Made use of \textbf{DMA} and \textbf{CPU caching} in order to transfer received data from FPGA to processor at over 1 GB/s.}
       \resumeItem{Designed and deployed custom Continuous Integration workflow for embedded software using GitHub Actions.}
-      \resumeItem{Implemented Linux userspace drivers in \textbf{Rust} and \textbf{C} for radios and high-performance clocks.}
+      \resumeItem{Implemented Linux userspace drivers in \textbf{Rust} and \textbf{C} to interface with radios and jitter attenuators over SPI and I2C.}
       \resumeItemListEnd
-      %\vspace{-5pt}
-
-
-%    \resumeSubheading
-%      {York University}{Toronto, ON}
-%      {Research Assistant}{January 2019 - August 2019}
-%      \resumeItemListStart
-%      \resumeItem{Conducted original epidemiological research to design an ODE model to simulate the dynamics of a virus outbreak in secondary schools, with implementation in MATLAB and C++}
-%      \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
-\shorterSection{Projects}
-  \resumeSubHeadingListStart
-     \vspace{5pt}
-  \resumeSubItem{\href{https://github.com/davidgur/3d-sound-synthesis}{3D Sound Synthesis}}
-  {Localize audio to a particular location around the listener. \\
-      \emph{C++ (STL, FFTW, CMake), MATLAB}
-        \vspace{-5pt}
-        \begin{itemize}
-            \item Designed a custom algorithm for 3D sound synthesis, given a position on the unit sphere using various \textbf{DSP} methods.
-            \item Prototyped in \textbf{MATLAB}, with final implementation in \textbf{C++}.
-        \end{itemize}
-     }
-     \vspace{5pt}
-     \resumeSubItem{Cross-Correlation Fluid Flow Meter}
-     {Low-cost signal acquisition and processing system for ultrasonic fluid flow measurement.\\
-         \emph{Python (NumPy, Matplotlib, SciPy), C++, MATLAB}
-        \vspace{-5pt}
-        \begin{itemize}
-            \item Developed high throughput, multi-threaded \textbf{Python} application for acquisition and processing of ultrasonic signals within strict operational requirements.
-            \item Collaborated on and prototyped custom signal processing algorithms in \textbf{MATLAB}, with implementation in \textbf{C++}
-        \end{itemize}
-     }
-  \resumeSubHeadingListEnd
+% \shorterSection{Projects}
+%   \resumeSubHeadingListStart
+%      \vspace{5pt}
+%   \resumeSubItem{\href{https://github.com/davidgur/3d-sound-synthesis}{3D Sound Synthesis}}
+%   {Localize audio to a particular location around the listener. \\
+%       \emph{C++ (STL, FFTW, CMake), MATLAB}
+%         \vspace{-5pt}
+%         \begin{itemize}
+%             \item Designed a custom DSP algorithm (in C++) for 3D sound synthesis, given a position on the unit sphere.
+%         \end{itemize}
+%      }
+%      \vspace{5pt}
+%      \resumeSubItem{Cross-Correlation Fluid Flow Meter}
+%      {Low-cost signal acquisition and processing system for ultrasonic fluid flow measurement.\\
+%          \emph{Python (NumPy, Matplotlib, SciPy), C++, MATLAB}
+%         \vspace{-5pt}
+%         \begin{itemize}
+%             \item Developed high throughput, multi-threaded \textbf{Python} application for acquisition and processing of ultrasonic signals within strict operational requirements.
+%         \end{itemize}
+%      }
+%   \resumeSubHeadingListEnd
 
 
 
