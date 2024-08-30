@@ -64,6 +64,15 @@
     \end{tabular*}\vspace{-5pt}
 }
 
+\newcommand{\resumeSubheadingEd}[5]{
+  \vspace{-1pt}\item[]
+  \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+      \hspace{-10pt}\textbf{#1} & #2 \\
+      \hspace{-10pt}\textit{\small#3} & \textit{\small #4} \\
+      \hspace{-10pt}\textit{\small#5}
+    \end{tabular*}\vspace{-5pt}
+}
+
 \newcommand{\resumeSubsubheading}[1]{
     \vspace{-25pt}\item[]
     \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
@@ -126,7 +135,7 @@
     } \vspace{-5pt}
 
 \item{
-        \textbf{Libraries}{: NumPy, SciPy, Pandas, PyTorch, TensorFlow, sklearn, Matplotlib, Flask, OpenCV, FFTW, CTypes}
+        \textbf{Libraries}{: NumPy, SciPy, Pandas, PyTorch, TensorFlow, sklearn, Matplotlib, Flask, OpenCV}
     } \vspace{-5pt}
 
     \resumeSubHeadingListEnd
@@ -135,25 +144,26 @@
     \vspace{-3pt}
 \shorterSection{Education}
   \resumeSubHeadingListStart
-    \resumeSubheading
+    \resumeSubheadingEd
       {University of Waterloo}{Waterloo, ON}
       {Bachelor of Mathematics in Computer Science and Computational Mathematics}{Expected Graduation: April 2025}
-    \vspace{1pt}
-    \resumeItem{\vspace{-5pt}
-        \emph{\textbf{Quickest Change Detection}}: Performed supervised research on non-parametric quickest changepoint detection of high-dimensional data on low power systems.
-    }
-    \resumeItem{\vspace{-5pt}
-        \emph{\textbf{Spiking Neural Networks}}: Investigated ability of spiking neural networks in solving certain classes of partial differential equations on neuromorphic hardware.
-    }
-    \resumeItem{\vspace{-5pt}
-        \emph{\textbf{LLM Research}}: Investigated the efficacy of LLM's like LLaMA in performing graph clustering tasks.
-    }
+      {\emph{Relevant Courses:} Intro to Machine Learning, Computational Linear Algebra, Stochastic Processes}
   \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
 \vspace{-2pt}
 \shorterSection{Experience}
  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Waterloo}{Waterloo, ON}
+      {Undergraduate Researcher}{May 2024 - August 2024}
+    \resumeItemListStart
+        \resumeItem{Conducted research on non-parametric change detection methods, with the intention of identifying shifts in unknown probability distributions on an incoming stream of data.}
+        \resumeItem{Applied advanced geometric methods to learn representations of high-dimensional data that are more conducive to change detection. Developed solution that was more robust than current state-of-the-art methods.}
+        \resumeItem{Investigated the use of hardware Spiking Neural Networks for solving partial differential equations, particularly as hardware accelerators for such tasks.}
+    \resumeItemListEnd
+    \vspace{-10pt}
+
     \resumeSubheading
       {Enlighted -- Siemens AG}{Waterloo, ON}
       {IoT Research Intern}{January 2024 - April 2024}
@@ -170,7 +180,7 @@
       {MathWorks, Inc}{Glasgow, Scotland}
       {Software Engineer in Test Intern}{May 2023 - August 2023}
       \resumeItemListStart
-      \resumeItem{Improved open-source UHD hardware simulator with \textbf{Python}, enriching its versatility for cost-effective testing.}
+      %\resumeItem{Improved open-source UHD hardware simulator with \textbf{Python}, enriching its versatility for cost-effective testing.}
         \resumeItem{Enhanced the \textbf{C++} based high-speed data acquisition interface, ensuring accurate performance benchmarking and optimal system evaluation.}
         \resumeItem{Consolidated several RF processing chains to reduce the number of \textbf{FPGA} bitstreams required for building and testing MATLAB Wireless Testbench by 50\%, resulting in a 4+ hour reduction in daily build time.}
 
@@ -200,7 +210,7 @@
       \resumeItemListStart
       \resumeItem{Developed multithreaded radio signal acquisition software in \textbf{Rust} to receive and process LTE signals at over 60 MS/s.}
       \resumeItem{Made use of \textbf{DMA} and \textbf{CPU caching} in order to transfer received data from FPGA to processor at over 1 GB/s.}
-      \resumeItem{Designed and deployed custom Continuous Integration workflow for embedded software using GitHub Actions.}
+      %\resumeItem{Designed and deployed custom Continuous Integration workflow for embedded software using GitHub Actions.}
       \resumeItem{Implemented Linux userspace drivers in \textbf{Rust} and \textbf{C} to interface with radios and jitter attenuators over SPI and I2C.}
       \resumeItemListEnd
 
