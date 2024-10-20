@@ -126,34 +126,30 @@
     \end{tabularx}
 \end{table}
 
-%-----------SKILLS-----------------
-\shorterSection{Technical Skills}
-\resumeSubHeadingListStart
-\small
-\item{
-        \textbf{Languages}{: Python, C++, C, Rust, MATLAB, Scheme, SQL, Shell scripting}
-    } \vspace{-5pt}
-
-\item{
-        \textbf{Libraries}{: NumPy, SciPy, Pandas, PyTorch, TensorFlow, sklearn, Matplotlib, Flask, OpenCV}
-    } \vspace{-5pt}
-
-    \resumeSubHeadingListEnd
-
-    %-----------EDUCATION-----------------
-    \vspace{-3pt}
+%-----------EDUCATION-----------------
+\vspace{-15pt}
 \shorterSection{Education}
   \resumeSubHeadingListStart
     \resumeSubheadingEd
       {University of Waterloo}{Waterloo, ON}
       {Bachelor of Mathematics in Computer Science and Computational Mathematics}{Expected Graduation: April 2025}
-      {\emph{Relevant Courses:} Intro to Machine Learning, Computational Linear Algebra, Stochastic Processes}
+      {\emph{Relevant Courses:} Machine Learning, Computational Linear Algebra, Stochastic Processes}
   \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
 \vspace{-2pt}
 \shorterSection{Experience}
  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Radar}{New York City, NY}
+      {Software Engineering Intern}{September 2024 - December 2024}
+    \resumeItemListStart
+      \resumeItem{Improved speed and accuracy of company proprietary geocoder using \textbf{Rust}. Fixed bugs and added features to support international addresses, leading to several new customers.}
+      \resumeItem{Developed an \textbf{Apache Spark} pipeline to ingest and process every street in the world to later be used in the geocoder.}
+      \resumeItem{Designed a new indoor uplink TDoA-based real-time location system using ultra-wideband (UWB) technology. Performed \textbf{STM32} board bring-up. Implemented robust localization, optimization, and estimation algorithms in \textbf{Python}.}
+    \resumeItemListEnd
+    \vspace{-10pt}
+
     \resumeSubheading
       {University of Waterloo}{Waterloo, ON}
       {Undergraduate Researcher}{May 2024 - August 2024}
@@ -168,9 +164,7 @@
       {Enlighted -- Siemens AG}{Waterloo, ON}
       {IoT Research Intern}{January 2024 - April 2024}
     \resumeItemListStart
-    \resumeItem{Independently researched and developed a data-efficient \textbf{LSTM}-based approach to perform RSSI-based localization of Bluetooth Low Energy (BLE) assets using \textbf{TensorFlow}.}
-      \resumeItem{New machine learning-based approach achieves accuracy of 2 metres, compared to 4.5 metre accuracy of previous solution, with improved trajectory estimation and decreased time delay.}
-      \resumeItem{Developed data-driven \textbf{channel estimation} utilities to facilitate conversion from signal strength (dBm) to distance.}
+      \resumeItem{Researched and developed an \textbf{LSTM}-based approach to perform localization of BLE assets using \textbf{TensorFlow}.}
       \resumeItem{Developed and integrated a robust Kalman filter using \textbf{Python}, \textbf{Redis}, and \textbf{MongoDB}, accessible via \textbf{FastAPI}.}
       \resumeItem{Performed mathematical analysis on optimal estimators (CRLB) and filters (Kalman) to establish benchmarks.}
     \resumeItemListEnd
@@ -190,7 +184,7 @@
       {Microchip Technologies, Inc}{Toronto, ON}
       {Software Engineering Intern}{September 2022 - December 2022}
       \resumeItemListStart
-        \resumeItem{Responsible for porting and documenting SmartHLS FPGA high-level synthesis build system from Makefiles to \textbf{Python}, allowing for Windows compatibility and improved maintainability.}
+        %\resumeItem{Responsible for porting and documenting SmartHLS FPGA high-level synthesis build system from Makefiles to \textbf{Python}, allowing for Windows compatibility and improved maintainability.}
         \resumeItem{Implemented improvements and developed data structures in \textbf{C++} which eliminated non-determinism in LLVM-based synthesis from C/C++ to Verilog, allowing for improved integration testing.}
       \resumeItemListEnd
       \vspace{-5pt}
@@ -203,7 +197,7 @@
       \resumeItem{Designed and implemented high-speed data streaming application for \textbf{embedded Linux} system in \textbf{Rust} within soft real-time performance constraints.}
       \resumeItemListEnd
       \vspace{-5pt}
-      
+     
     \resumeSubheading
       {Applied Mind, Inc}{Ottawa, ON}
       {Embedded Software Development Intern}{May 2021 - August 2021}
@@ -211,10 +205,21 @@
       \resumeItem{Developed multithreaded radio signal acquisition software in \textbf{Rust} to receive and process LTE signals at over 60 MS/s.}
       \resumeItem{Made use of \textbf{DMA} and \textbf{CPU caching} in order to transfer received data from FPGA to processor at over 1 GB/s.}
       %\resumeItem{Designed and deployed custom Continuous Integration workflow for embedded software using GitHub Actions.}
-      \resumeItem{Implemented Linux userspace drivers in \textbf{Rust} and \textbf{C} to interface with radios and jitter attenuators over SPI and I2C.}
+      %\resumeItem{Implemented Linux userspace drivers in \textbf{Rust} and \textbf{C} to interface with radios and jitter attenuators over SPI and I2C.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------------
+\shorterSection{Technical Skills}
+\resumeSubHeadingListStart
+\small
+\item{
+        \textbf{Languages}{: Python, C++, C, Rust, MATLAB, Scala, Scheme, SQL}
+    } \vspace{-5pt}
+
+    \resumeSubHeadingListEnd
+
 
 %-----------PROJECTS-----------------
 % \shorterSection{Projects}
